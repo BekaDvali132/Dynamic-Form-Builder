@@ -16,3 +16,8 @@ export interface SelectFormItemInterface extends BaseFormItemInterface {
 export interface NumberFormItemInterface extends BaseFormItemInterface {
     inputProps?: InputNumberProps
 }
+
+export interface handleSizeChangeInterface {
+    increment: boolean
+    index: number
+}

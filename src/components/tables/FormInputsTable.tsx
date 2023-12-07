@@ -50,7 +50,7 @@ const FormInputsTable: FunctionComponent<Props> = (props) => {
                                 danger={true}
                                 // @ts-ignore
                                 onClick={() => props.setDataSource((prev) => {
-                                    let arr = [...prev];
+                                    const arr = [...prev];
                                     return arr.filter(input => input.key !== data.key)
                                 })}
                             >

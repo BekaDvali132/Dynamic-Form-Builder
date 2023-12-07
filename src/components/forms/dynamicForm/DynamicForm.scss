@@ -2,4 +2,13 @@
   display: grid;
   grid-template-columns: repeat(10,minmax(0,1fr));
   gap: 10px;
+
+  .dynamic-form-item {
+    position: relative;
+    .dynamic-form-item-controls {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
 }

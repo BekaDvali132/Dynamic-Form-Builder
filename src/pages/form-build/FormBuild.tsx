@@ -13,15 +13,17 @@ function FormBuild() {
 
     const onFinish = (values: FormBuildValuesInterface) => {
         setFormInputs((prev) => {
-            let arr = [...prev];
+            const arr = [...prev];
+            const lastElement = arr?.[arr.length - 1];
+            const key = lastElement ? arr[arr.length - 1].key + 1 : 1
             arr.push({
                 ...values,
-                key: arr.length + 1
+                key
             });
             return arr
         })
     }
-
+    console.log(formInputs)
     return (
         <Space direction={'vertical'} style={{
             width: '100%'

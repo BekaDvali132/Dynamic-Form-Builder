@@ -3,4 +3,5 @@ export interface FormBuildValuesInterface {
     inputName: string
     inputLabel: string
     colSpan: number
+    startCol: number
 }

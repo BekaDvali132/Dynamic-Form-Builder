@@ -2,5 +2,5 @@ import {formInputDataSourceType} from "../types/dataSourceTypes.ts";
 
 export interface FormInputsTableInterface {
     dataSource: formInputDataSourceType[],
-    setDataSource: (prev:formInputDataSourceType[]) => void
+    setDataSource: (prev: (prev: formInputDataSourceType[]) => formInputDataSourceType[]) => void
 }

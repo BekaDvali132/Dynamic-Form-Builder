@@ -45,6 +45,23 @@ function FormBuilderForm(props: FormProps): JSX.Element {
                     }
                 }}
             />
+            <NumberInput
+                formItemProps={{
+                    name:'startCol',
+                    label:'Start Column',
+                    rules:[{
+                            required: true,
+                        }]
+                }}
+                inputProps={{
+                    controls: false,
+                    min: 0,
+                    max: 9,
+                    style: {
+                        width: '100%',
+                    }
+                }}
+            />
             <SelectInput
                 inputProps={{
                     options:inputTypes
